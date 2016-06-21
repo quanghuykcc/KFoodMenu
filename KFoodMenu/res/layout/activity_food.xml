@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_review"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_review" />
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/show_image_res"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp" >
+        </android.support.v4.view.ViewPager>
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/show_image_res"
+            android:layout_alignTop="@+id/show_image_res"
+            android:src="@drawable/article_share_icon" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_name_food"
+                android:layout_width="0dp"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_cost_food"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_information"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_point"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

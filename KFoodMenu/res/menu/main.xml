@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.iviettech_final_project.MainActivity" >
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/ic_log_out"
+        android:title="Đăng xuất"/>
+
+</menu>
